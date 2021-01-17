@@ -12,6 +12,9 @@ const UsuarioSchema = Schema({
   dni:{
     type: String,
 },
+nacimiento:{
+  type: String,
+},
   email: {
     type: String,
     required: true,

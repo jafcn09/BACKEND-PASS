@@ -21,7 +21,7 @@ app.use(express.static('public'));
 /**rutas */
 app.use('/api/usuarios', require('./rutas/usuarios'));
 app.use('/api/login', require('./rutas/auth'));
-
+app.use('/api/todo', require('./rutas/busqueda'));
 
 /*iniciar el servidor*/
 /**port: 3000 */

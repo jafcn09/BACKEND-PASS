@@ -23,7 +23,7 @@ const getUsuarios = async(req, res) => {
 }
 
 const crearUsuario = async(req, res = response) => {
-  const { email,password,nombre,apellido} = req.body;
+  const { email,password,nombre,apellido,dni,celular,nacimiento} = req.body;
 
   try {
     const existeEmail = await Usuario.findOne({ email });
